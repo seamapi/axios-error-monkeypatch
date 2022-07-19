@@ -1,0 +1,21 @@
+{
+  "name": "axios-error-monkeypatch",
+  "version": "1.0.0",
+  "main": "axios-error-monkeypatch.js",
+  "repository": "git@github.com:seamapi/axios-error-monkeypatch.git",
+  "license": "MIT",
+  "peerDependencies": {
+    "axios": "^0.27.2"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "concordance": "^5.0.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3"
+  }
+}
