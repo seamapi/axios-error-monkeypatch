@@ -1,6 +1,6 @@
-import chalk from "chalk"
-import { omitBy, isUndefined } from "lodash"
-import concordance from "concordance"
+const chalk = require("chalk")
+const { omitBy, isUndefined } = require("lodash")
+const concordance = require("concordance")
 
 /**
  * Ava formats Axios errors extremely verbose but somehow without important
@@ -10,7 +10,7 @@ import concordance from "concordance"
  * concordance and replace it with a version that handles Axios error formatting
  * better.
  */
-export default () => {
+module.exports = () => {
   if (!concordance.simplify_error_monkeypatch) {
     concordance.simplify_error_monkeypatch = true
     const ogFormat = concordance.format
